@@ -1,1 +1,1 @@
-# test-service-bindings-with-nextjs
+# test-cloudflare-service-bindings-with-nextjs
