@@ -1,0 +1,21 @@
+{
+  "name": "test-cloudflare-service-bindings-with-nextjs",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230914.0",
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "typescript": "5.2.2"
+  },
+  "packageManager": "pnpm@8.6.10",
+  "dependencies": {
+    "turbo": "^1.10.15",
+    "wrangler": "^3.11.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "test-service-bindings-with-nextjs-private-service",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^3.7.2"
+  },
+  "devDependencies": {
+    "wrangler": "^3.9.0"
+  }
+}
