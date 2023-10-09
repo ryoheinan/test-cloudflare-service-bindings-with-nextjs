@@ -4,7 +4,7 @@ type Bindings = {
   INTERNAL_TOKEN: string;
 };
 
-const app = new Hono<{ Bindings: Bindings }>().basePath("/private");
+const app = new Hono<{ Bindings: Bindings }>().basePath("/api/private");
 
 app.use("*", async (c, next) => {
   const token = c.req.raw.headers.get("x-custom-token");
