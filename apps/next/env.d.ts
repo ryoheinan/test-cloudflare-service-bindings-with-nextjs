@@ -1,9 +1,9 @@
-import type { Fetcher } from "@cloudflare/workers-types";
+import type { Fetcher } from '@cloudflare/workers-types'
 
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      SERVICE: Fetcher;
+      SERVICE: Fetcher
     }
   }
 }
