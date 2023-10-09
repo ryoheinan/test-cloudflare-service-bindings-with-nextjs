@@ -1,0 +1,32 @@
+{
+  "name": "test-service-bindings-with-nextjs-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "pages:build": "pnpm dlx @cloudflare/next-on-pages@1",
+    "pages:deploy": "pnpm run pages:build && wrangler pages deploy .vercel/output/static",
+    "pages:watch": "pnpm @cloudflare/next-on-pages@1 --watch",
+    "pages:dev": "pnpm wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat"
+  },
+  "dependencies": {
+    "@types/node": "20.8.3",
+    "@types/react": "18.2.25",
+    "@types/react-dom": "18.2.11",
+    "eslint": "8.51.0",
+    "eslint-config-next": "13.5.4",
+    "next": "13.5.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "1",
+    "eslint-plugin-next-on-pages": "^1.6.3",
+    "vercel": "^32.4.1",
+    "wrangler": "^3.11.0"
+  }
+}
